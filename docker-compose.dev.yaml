@@ -13,4 +13,12 @@ services:
             - /app/node_modules
         environment:
             - NODE_ENV=development
+            - MONGO_USER=zyzyx
+            - MONGO_PASSWORD=mypassword
         command: npm run dev
+
+    mongodb:
+        environment: 
+            - MONGO_INITDB_ROOT_USERNAME=zyzyx
+            - MONGO_INITDB_ROOT_PASSWORD=mypassword
+    

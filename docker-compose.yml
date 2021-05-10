@@ -11,7 +11,8 @@ services:
             - node-app
 
     node-app:
-        build: /.
+        build: ./
+        image: zyzyx93/node-app
         environment: 
             - PORT=3000
         volumes:
